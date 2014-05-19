@@ -1,7 +1,7 @@
 require 'fun_with_strings'
 require 'debugger'
 
-describe 'palindrome detection', :pending => true do
+describe 'palindrome detection' do
   it 'should work for simple strings [10 points]' do
     'redivider'.should  be_a_palindrome
     'abracadabra'.should_not  be_a_palindrome
@@ -15,7 +15,7 @@ describe 'palindrome detection', :pending => true do
   end    
 end
 
-describe 'word count', :pending => true do
+describe 'word count' do
   it 'should return a hash [5 points]' do
     'now is the time'.count_words.should be_a_kind_of Hash
   end
