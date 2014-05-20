@@ -9,7 +9,14 @@ module FunWithStrings
     return dict
   end
   def anagram_groups
-    # your code here
+    words = self.split(' ')
+    h = Hash.new
+    words.each do |i| 
+    	key = i.chars.sort.join
+	h[key] = [] unless h.key? key
+	h[key] = h[key].push i
+    end
+    h.values
   end
 end
 
